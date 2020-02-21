@@ -19,13 +19,13 @@
 - 安装babel依赖： `npm install --save-dev babel-cli`
 - 下载预设：`npm install --save-dev babel-preset-es2015`
 - 配置 .babelrc 文件:
-```
+```json
   {
     "presets": ["es2015"]
   }
 ```
 - 配置 scripts:
-```
+```json
   // package.json
   "scripts": {
     "build": "babel src -d lib",

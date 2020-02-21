@@ -11,7 +11,7 @@
 * 启动服务 `gitbook serve [-p][port]`
 * 打包
 
-```
+```js
  gitbook build [文件路径] [目标路径]
  // 如
  gitbook build ./ ./docs
@@ -29,7 +29,7 @@
 
 * 添加内容
 
-```
+```json
 {
   "author": "qiuxiaori",
   "plugins": [ // 开启的插件

@@ -1,0 +1,29 @@
+{
+  "name": "study-note",
+  "version": "1.0.0",
+  "description": "_常用软件及网站_",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "gitbook-plugin-baidu": "^0.1.0",
+    "gitbook-plugin-disqus": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gitbook build ./ ./docs",
+    "push": "git add . && git commit -m \"update\" && git push origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiuxiaori/study-note.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qiuxiaori/study-note/issues"
+  },
+  "homepage": "https://github.com/qiuxiaori/study-note#readme"
+}
