@@ -1,3 +1,15 @@
 {
-  "author": "qiuxiaori"
+  "author": "qiuxiaori",
+  "plugins": [
+    "disqus",
+    "baidu"
+  ],
+  "pluginsConfig": {
+    "disqus": {
+      "shortName": "gitbook"
+    },
+    "baidu": {
+      "token": "f2aa21e56274fea731f801e573a3f23a"
+    }
+  }
 }

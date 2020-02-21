@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -249,6 +253,31 @@
 <li>&#x628A;&#x6253;&#x5305;&#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#x63A8;&#x5230; gh-pages&#x5206;&#x652F;&#x7684;&#x6839;&#x76EE;&#x5F55;</li>
 <li>&#x6253;&#x5F00; <a href="https://githubname.github.io/&#x4ED3;&#x5E93;&#x540D;" target="_blank">https://githubname.github.io/&#x4ED3;&#x5E93;&#x540D;</a> &#x5373;&#x53EF;&#x770B;&#x5230;</li>
 </ul>
+<h3 id="&#x56DB;-&#x63D2;&#x4EF6;&#x62D3;&#x5C55;">&#x56DB;. &#x63D2;&#x4EF6;&#x62D3;&#x5C55;</h3>
+<ul>
+<li><p>&#x6839;&#x76EE;&#x5F55;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x6587;&#x4EF6; book.json</p>
+</li>
+<li><p>&#x6DFB;&#x52A0;&#x5185;&#x5BB9;</p>
+</li>
+</ul>
+<pre><code>{
+  &quot;author&quot;: &quot;qiuxiaori&quot;,
+  &quot;plugins&quot;: [ // &#x5F00;&#x542F;&#x7684;&#x63D2;&#x4EF6;
+    &quot;disqus&quot;,
+    &quot;baidu&quot;
+  ],
+  &quot;pluginsConfig&quot;: { // &#x63D2;&#x4EF6;&#x914D;&#x7F6E;
+    &quot;disqus&quot;: {
+      &quot;shortName&quot;: &quot;gitbook&quot;
+    },
+    &quot;baidu&quot;: {
+      &quot;token&quot;: &quot;f2aa21e56274fea731f801e573a3f23a&quot;
+    }
+  }
+}
+</code></pre><ul>
+<li>&#x5B89;&#x88C5;&#x63D2;&#x4EF6; <code>gitbook install ./</code></li>
+</ul>
 
                                 
                                 </section>
@@ -288,7 +317,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Gitbook","level":"5.1","depth":1,"previous":{"title":"React","level":"4.1","depth":1,"path":"前端/React.md","ref":"./前端/React.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"qiuxiaori","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"工具/gitbook.md","mtime":"2020-02-21T08:29:45.402Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-21T08:30:47.834Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Gitbook","level":"5.1","depth":1,"previous":{"title":"React","level":"4.1","depth":1,"path":"前端/React.md","ref":"./前端/React.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","baidu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"gitbook"},"baidu":{"token":"f2aa21e56274fea731f801e573a3f23a"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"qiuxiaori","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"工具/gitbook.md","mtime":"2020-02-21T08:39:55.604Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-21T08:40:12.104Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -296,6 +325,18 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

@@ -23,3 +23,28 @@
 * 把代码推到另一个仓库
 * 把打包生成的文件推到 gh-pages分支的根目录
 * 打开 https://githubname.github.io/仓库名 即可看到
+
+### 四. 插件拓展
+* 根目录添加配置文件 book.json
+
+* 添加内容
+
+```
+{
+  "author": "qiuxiaori",
+  "plugins": [ // 开启的插件
+    "disqus",
+    "baidu"
+  ],
+  "pluginsConfig": { // 插件配置
+    "disqus": {
+      "shortName": "gitbook"
+    },
+    "baidu": {
+      "token": "f2aa21e56274fea731f801e573a3f23a"
+    }
+  }
+}
+```
+
+* 安装插件 `gitbook install ./`
