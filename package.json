@@ -15,7 +15,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gitbook build ./ ./docs",
     "push": "git add . && git commit -m \"update\" && git push origin master",
-    "switch": "git branch -D gh-pages && git checkout -b ph-pages"
+    "switch": "git branch -D gh-pages && git checkout -b ph-pages",
+    "publish": "npm run build && npm run push && npm run switch",
+    "wrap": "git subtree push --prefix=_book origin gh-pages"
   },
   "repository": {
     "type": "git",
