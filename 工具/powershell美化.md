@@ -64,6 +64,6 @@ Import-Module oh-my-posh
 Set-Theme Paradox // 主题名
 ```
 
-* 英文环境 `Set-Culture en-US`
+* 执行命令 `Set-Culture en-US` 将终端设置为英文环境，避免乱码
 
 * 修改文件中的主题名为自己想要的主题更换主题
