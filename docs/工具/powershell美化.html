@@ -1,0 +1,426 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>powershell美化 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="qiuxiaori">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="scoop.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Node</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Node/npm包开发.html">
+            
+                <a href="../Node/npm包开发.html">
+            
+                    
+                    npm包开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">后端</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../后端/Docker实战.html">
+            
+                <a href="../后端/Docker实战.html">
+            
+                    
+                    Docker实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">前端</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../前端/React.html">
+            
+                <a href="../前端/React.html">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">工具</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="gitbook.html">
+            
+                <a href="gitbook.html">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="scoop.html">
+            
+                <a href="scoop.html">
+            
+                    
+                    scoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.3" data-path="powershell美化.html">
+            
+                <a href="powershell美化.html">
+            
+                    
+                    powershell美化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >powershell美化</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="powershell&#x7F8E;&#x5316;&#x6559;&#x7A0B;">powershell&#x7F8E;&#x5316;&#x6559;&#x7A0B;</h2>
+<h3 id="&#x4E00;&#x5B57;&#x4F53;">&#x4E00;.&#x5B57;&#x4F53;</h3>
+<blockquote>
+<p>powershell&#x5BF9;&#x5B57;&#x4F53;&#x7684;&#x8981;&#x6C42;hin&#x4E25;&#x683C;&#xFF0C;&#x53EA;&#x6709;&#x66F4;&#x7EB1;&#x9ED1;&#x4F53;&#x8FD9;&#x4E00;&#x7B49;&#x5BBD;&#x5B57;&#x4F53;&#x652F;&#x6301; PowerShell &#x4E0B;&#x4F7F;&#x7528;&#x4E2D;&#x6587;&#x3002;</p>
+</blockquote>
+<ul>
+<li><p>&#x5730;&#x5740;&#xFF1A;<a href="https://github.com/be5invis/Sarasa-Gothic" target="_blank">github</a></p>
+</li>
+<li><p>&#x4E0B;&#x8F7D;&#xFF1A;&#x4F7F;&#x7528;ssh&#x6216;http&#x65B9;&#x5F0F;&#x62C9;&#x53D6;&#x6E90;&#x7801;</p>
+</li>
+<li><p>node&#x73AF;&#x5883;&#xFF1A;&#x6E90;&#x7801;&#x9700;&#x8981;&#x4F7F;&#x7528;npm&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;node&#x73AF;&#x5883;&#xFF0C;&#x6CA1;&#x6709;&#x7684;&#x540C;&#x5B66;&#x81EA;&#x5DF1;&#x8C37;&#x6B4C;</p>
+</li>
+</ul>
+<h3 id="&#x4E8C;&#x914D;&#x8272;">&#x4E8C;.&#x914D;&#x8272;</h3>
+<blockquote>
+<p>&#x5FAE;&#x8F6F;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x6362; PowerShell &#x914D;&#x8272;&#x7684;&#x5DE5;&#x5177;&#xFF1A;ColorTool.exe&#xFF0C;&#x8BE5;&#x5DE5;&#x5177;&#x652F;&#x6301; iTerm &#x4E3B;&#x9898;(&#x4EE5; .itermcolors &#x7ED3;&#x5C3E;&#x7684;&#x4E3B;&#x9898;&#x6587;&#x4EF6;)&#x3002;</p>
+</blockquote>
+<ul>
+<li><p>&#x5B89;&#x88C5;</p>
+<ul>
+<li><p>&#x4F7F;&#x7528;scoop&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#xFF1A;</p>
+<ul>
+<li>&#x6267;&#x884C;<code>scoop install colortool</code>&#x5373;&#x53EF;&#x3002;&#x6CA1;&#x6709;scoop&#x73AF;&#x5883;&#x7684;&#x672C;&#x7AD9;<a href="&#x5DE5;&#x5177;/scoop.md">scoop&#x6559;&#x7A0B;</a></li>
+</ul>
+</li>
+<li><p>github&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#xFF1A;
+<a href="https://github.com/Microsoft/console/releases" target="_blank">&#x5730;&#x5740;</a>,&#x89E3;&#x538B;&#x540E;&#x5728;&#x89E3;&#x538B;&#x8DEF;&#x5F84;&#x6267;&#x884C;<code>colortool -b campbell</code>&#x5E94;&#x7528;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;</p>
+</li>
+</ul>
+</li>
+<li><p>&#x67E5;&#x770B;&#x5DF2;&#x5B89;&#x88C5;&#x7684;&#x4E3B;&#x9898;: <code>colortool -s</code></p>
+</li>
+<li><p>&#x9884;&#x89C8;&#x914D;&#x8272;&#xFF1A;<code>colortool [schmea name]</code> &#x5982; <code>colortool cmd-legacy.ini</code></p>
+</li>
+<li><p>&#x4FDD;&#x5B58;&#x914D;&#x8272;&#xFF1A;powershell &#x9876;&#x90E8;&#x53F3;&#x952E; -&gt; &#x5C5E;&#x6027; -&gt; &#x786E;&#x5B9A; &#x5C31;&#x80FD;&#x4FDD;&#x5B58;&#x9884;&#x89C8;&#x7684;&#x914D;&#x8272;&#x65B9;&#x6848;&#x5566;&#x3002;</p>
+</li>
+<li><p>&#x66F4;&#x591A;&#x4E3B;&#x9898;&#xFF1A;</p>
+<ul>
+<li>&#x5728;<a href="https://iterm2colorschemes.com/" target="_blank">iterm2colorschemes</a>&#x627E;&#x5230;&#x559C;&#x6B22;&#x7684;&#x4E3B;&#x9898;</li>
+<li>&#x70B9;&#x51FB;&#x4E3B;&#x9898;&#x5C06;&#x6253;&#x5F00;&#x7684;&#x9875;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x590D;&#x5236;&#x4E0B;&#x6765;</li>
+<li>&#x65B0;&#x5EFA; .itermcolors &#x6587;&#x4EF6;&#xFF1A;<ul>
+<li>&#x5728;&#x5B89;&#x88C5;&#x76EE;&#x5F55;(scoop&#x5B89;&#x88C5;) C:\Users\username\scoop\apps\colortool\current\schemes &#x76EE;&#x5F55;&#x65B0;&#x5EFA;&#x540C;&#x540D;&#x4E3B;&#x9898;&#x6587;&#x4EF6;&#xFF0C;&#x5185;&#x5BB9;&#x7C98;&#x8D34;&#x8FDB;&#x53BB;</li>
+</ul>
+</li>
+<li>&#x6267;&#x884C; <code>colortool [schmea name]</code> &#x5E76;&#x4FDD;&#x5B58;&#x4E3B;&#x9898;&#x5373;&#x53EF;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x4E09;&#x4E3B;&#x9898;">&#x4E09;.&#x4E3B;&#x9898;</h3>
+<blockquote>
+<p>&#x54B1;&#x4E5F;&#x6CA1;&#x7528;&#x8FC7;linux&#xFF0C;&#x542C;&#x8BF4;oh-my-posh&#x5F88;&#x597D;&#x7528;&#xFF0C;windows&#x6709;&#x4E2A;&#x5DEE;&#x4E0D;&#x591A;&#x7684;&#xFF0C;&#x54B1;&#x4EEC;&#x5C31;&#x628A;&#x5B83;&#x62FF;&#x6765;&#x7528;&#x7528;&#x3002;</p>
+</blockquote>
+<ul>
+<li><p>github&#x5730;&#x5740;&#xFF1A; <a href="https://github.com/JanDeDobbeleer/oh-my-posh" target="_blank">oh-my-posh</a></p>
+</li>
+<li><p>&#x7BA1;&#x7406;&#x5458;&#x6A21;&#x5F0F;&#x542F;&#x52A8; PowerShell</p>
+</li>
+<li><p>&#x5B89;&#x88C5;&#x6A21;&#x5757;</p>
+<pre><code class="lang-js">Install-Module posh-git -Scope CurrentUser
+Install-Module oh-my-posh -Scope CurrentUser
+</code></pre>
+</li>
+<li><p>&#x65B0;&#x589E;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5982;&#x679C;&#x4E4B;&#x524D;&#x6CA1;&#x6709;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5C31;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A; PowerShell &#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
+<span class="hljs-keyword">if</span> (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
+<span class="hljs-comment">// &#x7528;&#x8BB0;&#x4E8B;&#x672C;&#x6253;&#x5F00;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
+<span class="hljs-comment">// &#x8DEF;&#x5F84; C:\Users\&lt;&#x7528;&#x6237;&#x540D;&gt;\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1</span>
+notepad $PROFILE
+</code></pre>
+</li>
+<li><p>&#x6DFB;&#x52A0;&#x5185;&#x5BB9;</p>
+<pre><code class="lang-js">Import-Module posh-git
+Import-Module oh-my-posh
+<span class="hljs-built_in">Set</span>-Theme Paradox <span class="hljs-comment">// &#x4E3B;&#x9898;&#x540D;</span>
+</code></pre>
+</li>
+<li><p>&#x82F1;&#x6587;&#x73AF;&#x5883; <code>Set-Culture en-US</code></p>
+</li>
+<li><p>&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x4E3B;&#x9898;&#x540D;&#x4E3A;&#x81EA;&#x5DF1;&#x60F3;&#x8981;&#x7684;&#x4E3B;&#x9898;&#x66F4;&#x6362;&#x4E3B;&#x9898;</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="scoop.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: scoop">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"powershell美化","level":"5.3","depth":1,"previous":{"title":"scoop","level":"5.2","depth":1,"path":"工具/scoop.md","ref":"./工具/scoop.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","baidu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"gitbook"},"baidu":{"token":"f2aa21e56274fea731f801e573a3f23a"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"qiuxiaori","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"工具/powershell美化.md","mtime":"2020-02-28T17:58:58.973Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-28T17:59:18.765Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -14,5 +14,6 @@
 ### 工具
   * [Gitbook](./工具/gitbook.md)
   * [scoop](./工具/scoop.md)
+  * [powershell美化](./工具/powershell美化.md)
 
 
