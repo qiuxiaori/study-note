@@ -13,5 +13,6 @@
 
 ### 工具
   * [Gitbook](./工具/gitbook.md)
+  * [scoop](./工具/scoop.md)
 
 

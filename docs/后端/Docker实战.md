@@ -139,5 +139,10 @@ CMD ["npm", "start"]
 ### 六. 其他
 
 **1. 查看构建过程：** `docker history [imageName]`
-### 六. Docker-compose
+**2. 查看所有容器：** `docker ps -aq`
+**3. 停止所有容器：** `docker stop $(docker ps -aq)`
+**4. 删除所有容器：** `docker rm $(docker ps -aq)`
+**5. 删除所有镜像：** `docker rmi $(docker images -q)`
+
+### 七. Docker-compose
 
