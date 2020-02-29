@@ -16,7 +16,7 @@
     "serve": "gitbook serve ./ ./docs",
     "build": "gitbook build ./ ./docs",
     "push:m": "git add . && git commit -m \"update\" && git push origin master -f",
-    "push:g": "git add . && git commit -m \"update\" && git push origin gh—pages",
+    "push:g": "git add . && git commit -m \"update\" && git push origin gh—pages -f",
     "create:g": "git branch gh-pages",
     "switch:g": "git branch -D gh-pages && git checkout -b gh-pages",
     "start": "npm run build && npm run push:m && npm run switch:g",
