@@ -4,11 +4,11 @@
 
 > powershell对字体的要求hin严格，只有更纱黑体这一等宽字体支持 PowerShell 下使用中文。
 
-* 地址：[github](https://github.com/be5invis/Sarasa-Gothic)
+* 地址：[github](https://link.zhihu.com/?target=https%3A//github.com/be5invis/Sarasa-Gothic/releases)
 
-* 下载：使用ssh或http方式拉取源码
+* 安装：下载解压后复制解压的内容粘贴到目录 C:\Windows\Fonts 即可安装
 
-* node环境：源码需要使用npm安装依赖，因此需要node环境，没有的同学自己谷歌
+* 使用：打开 PowerShell 右键页面顶部 -> 属性 -> 字体 选择并确定
 
 ### 二.配色
 
