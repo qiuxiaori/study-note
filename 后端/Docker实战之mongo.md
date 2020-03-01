@@ -25,6 +25,7 @@
 
 ### 添加用户管理员
 > auth模式运行的数据库先需要添加一个管理用户的用户管理员
+
 * 执行 `docker exec -it <YOUR-NAME> mongo admin` 进入到 shell 中
 * 添加管理员 `db.createUser({ user: 'username', pwd: 'password', roles: [ { role: 'userAdminAnyDatabase', db: 'admin' } ]})`
 * 之后用管理员身份登录可以：
@@ -38,6 +39,7 @@
 
 ### 数据库权限
 > 刚刚添加的管理员只是mongo数据库中用来管理其他用户的管理员，如果相对数据进行操作，需要创建数据库管理员
+
 * 以用户管理员登入 shell
 * 切换到要添加管理的数据库：`use <DbName>`
 * 新建：`db.createUser({ user: 'username', pwd: 'password', roles: [ { role: 'root', db: <DbName> }, { role: 'readWrite', db: <DbName> } ]})`

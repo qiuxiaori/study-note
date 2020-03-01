@@ -305,6 +305,7 @@
 <h3 id="&#x6DFB;&#x52A0;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x5458;">&#x6DFB;&#x52A0;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x5458;</h3>
 <blockquote>
 <p>auth&#x6A21;&#x5F0F;&#x8FD0;&#x884C;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5148;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x7BA1;&#x7406;&#x7528;&#x6237;&#x7684;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x5458;</p>
+</blockquote>
 <ul>
 <li>&#x6267;&#x884C; <code>docker exec -it &lt;YOUR-NAME&gt; mongo admin</code> &#x8FDB;&#x5165;&#x5230; shell &#x4E2D;</li>
 <li>&#x6DFB;&#x52A0;&#x7BA1;&#x7406;&#x5458; <code>db.createUser({ user: &apos;username&apos;, pwd: &apos;password&apos;, roles: [ { role: &apos;userAdminAnyDatabase&apos;, db: &apos;admin&apos; } ]})</code></li>
@@ -318,17 +319,16 @@ db.auth(username, password) <span class="hljs-comment">// &#x767B;&#x5165;</span
 </ul>
 </li>
 </ul>
-</blockquote>
 <h3 id="&#x6570;&#x636E;&#x5E93;&#x6743;&#x9650;">&#x6570;&#x636E;&#x5E93;&#x6743;&#x9650;</h3>
 <blockquote>
 <p>&#x521A;&#x521A;&#x6DFB;&#x52A0;&#x7684;&#x7BA1;&#x7406;&#x5458;&#x53EA;&#x662F;mongo&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7528;&#x6765;&#x7BA1;&#x7406;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x7684;&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x5982;&#x679C;&#x76F8;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x5458;</p>
+</blockquote>
 <ul>
 <li>&#x4EE5;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x5458;&#x767B;&#x5165; shell</li>
 <li>&#x5207;&#x6362;&#x5230;&#x8981;&#x6DFB;&#x52A0;&#x7BA1;&#x7406;&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF1A;<code>use &lt;DbName&gt;</code></li>
 <li>&#x65B0;&#x5EFA;&#xFF1A;<code>db.createUser({ user: &apos;username&apos;, pwd: &apos;password&apos;, roles: [ { role: &apos;root&apos;, db: &lt;DbName&gt; }, { role: &apos;readWrite&apos;, db: &lt;DbName&gt; } ]})</code></li>
 <li>&#x4EE5;&#x8FD9;&#x4E2A;&#x8D26;&#x6237;&#x8FDE;&#x63A5; mongo &#x5C31;&#x5177;&#x6709;&#x8BFB;&#x5199;&#x6743;&#x9650;&#x4E86;</li>
 </ul>
-</blockquote>
 <h3 id="&#x53C2;&#x8003;&#x6587;&#x7AE0;">&#x53C2;&#x8003;&#x6587;&#x7AE0;</h3>
 <ol>
 <li><a href="ttps://brickyang.github.io/2017/03/15/%E5%88%A9%E7%94%A8-Docker-%E8%BF%90%E8%A1%8C-MongoDB/" target="_blank">&#x5229;&#x7528; Docker &#x8FD0;&#x884C; MongoDB</a></li>
@@ -380,7 +380,7 @@ db.auth(username, password) <span class="hljs-comment">// &#x767B;&#x5165;</span
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Docker实战之mongo","level":"3.2","depth":1,"next":{"title":"React","level":"4.1","depth":1,"path":"前端/React.md","ref":"./前端/React.md","articles":[]},"previous":{"title":"Docker实战","level":"3.1","depth":1,"path":"后端/Docker实战.md","ref":"./后端/Docker实战.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","baidu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"gitbook"},"baidu":{"token":"f2aa21e56274fea731f801e573a3f23a"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"qiuxiaori","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"后端/Docker实战之mongo.md","mtime":"2020-03-01T14:41:11.249Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-01T14:43:01.746Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Docker实战之mongo","level":"3.2","depth":1,"next":{"title":"React","level":"4.1","depth":1,"path":"前端/React.md","ref":"./前端/React.md","articles":[]},"previous":{"title":"Docker实战","level":"3.1","depth":1,"path":"后端/Docker实战.md","ref":"./后端/Docker实战.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","baidu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"gitbook"},"baidu":{"token":"f2aa21e56274fea731f801e573a3f23a"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"qiuxiaori","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"后端/Docker实战之mongo.md","mtime":"2020-03-01T14:48:21.437Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-01T14:48:29.288Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
