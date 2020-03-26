@@ -1,6 +1,11 @@
 ## 小日的私人博客 && 笔记
+*****
 
-_常用软件及网站_
+### 环境
+* 安装 node: 官网安装
+* 全局安装 gitbook-cli: `npm i gitbook-cli -g`
 
-* OneNote: 偶尔做笔记，记录书单，账密等
-* github: 代码，pdf资源的同步，托管博客
+### 运行
+* 安装依赖: `npm i`
+* 安装插件: `gitbook install`
+* 启动: `npm run serve` 浏览器打开 [http://localhost:4000](http://localhost:4000)

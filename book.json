@@ -1,8 +1,19 @@
 {
+  "title": "xr-blog",
   "author": "qiuxiaori",
+  "description": "小日的博客",
+  "language": "zh-hans",
   "plugins": [
+    "-search",
     "disqus",
-    "baidu"
+    "baidu",
+    "back-to-top-button",
+    "chapter-fold",
+    "code",
+    "todo",
+    "github",
+    "pageview-count",
+    "lightbox"
   ],
   "pluginsConfig": {
     "disqus": {
@@ -10,6 +21,9 @@
     },
     "baidu": {
       "token": "f2aa21e56274fea731f801e573a3f23a"
+    },
+    "github": {
+      "url": "https://github.com/qiuxiaori"
     }
   }
 }
